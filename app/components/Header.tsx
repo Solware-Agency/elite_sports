@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,11 @@ function Header() {
     };
   }, [isOpen]);
 
+  const pathname = usePathname();
+  const isAboutPage = pathname === '/about';
+  const isAthletesPage = pathname === '/athletes';
+  const isContactPage = pathname === '/contact';
+  const isClubsPage = pathname === '/clubs';
   return (
     <>
       <header
@@ -56,16 +62,16 @@ function Header() {
             }`}
           >
             <li>
-              <Link href='/'>About</Link>
+              <Link href='/about' className={`hover:underline ${isAboutPage ? 'underline' : ''}`}>About</Link>
             </li>
             <li>
-              <Link href='/'>Athletes</Link>
+              <Link href='/athletes' className={`hover:underline ${isAthletesPage ? 'underline' : ''}`}>Athletes</Link>
             </li>
             <li>
-              <Link href='/'>Contact</Link>
+              <Link href='/contact' className={`hover:underline ${isContactPage ? 'underline' : ''}`}>Contact</Link>
             </li>
             <li>
-              <Link href='/'>Clubs | Organizations</Link>
+              <Link href='/clubs' className={`hover:underline ${isClubsPage ? 'underline' : ''}`}>Clubs | Organizations</Link>
             </li>
           </ul>
           <button

@@ -2,7 +2,6 @@ import { ArrowDown, CopyrightIcon } from 'lucide-react';
 import HomeAbout from './components/HomeAbout';
 
 import { CarouselElement } from './components/Carousel';
-import Partners from './components/Partners';
 import Image from 'next/image';
 
 export default function Home() {
@@ -71,7 +70,6 @@ export default function Home() {
           <CarouselElement />
         </div>
       </div>
-      <Partners />
     </>
   );
 }

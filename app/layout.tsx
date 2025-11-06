@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Partners from './components/Partners';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -55,6 +56,8 @@ export default function RootLayout({
         as='style'
       />
 
+      
+
       {/* Preload de imágenes críticas */}
       <link rel='preload' href='/hero.webp' as='image' type='image/webp' fetchPriority='high' />
       <link rel='preload' href='/isotipo.svg' as='image' type='image/svg+xml' />
@@ -73,6 +76,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Partners />
         <Footer />
       </body>
     </html>
