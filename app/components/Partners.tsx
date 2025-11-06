@@ -59,7 +59,7 @@ function Partners() {
       <Image
         src='/2.webp'
         alt='Partners'
-        className='w-full h-full object-cover object-top max-h-screen absolute top-0 left-0 right-0 bottom-0 -z-10'
+        className='w-full h-full object-cover object-top absolute top-0 left-0 right-0 bottom-0 -z-10'
         width={1920}
         height={1080}
       />
