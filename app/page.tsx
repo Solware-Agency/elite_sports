@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <div className='flex max-h-screen items-center justify-center font-sans '>
+      <div className='flex max-h-screen items-center justify-center font-sans relative'>
         <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50'>
           <div className='flex items-center justify-center h-full w-full'>
             <img
