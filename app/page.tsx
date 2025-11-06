@@ -1,12 +1,22 @@
 import { ArrowDown, CopyrightIcon } from 'lucide-react';
 import HomeAbout from './components/HomeAbout';
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-      <div className='flex max-h-screen items-center justify-center font-sans relative'>
-        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50'>
+      <div className='flex max-h-screen items-center justify-center font-sans relative h-screen w-full'>
+        <img
+          src='/hero.webp'
+          alt='hero image'
+          className='absolute top-0 left-0 w-full h-full object-cover object-top z-0'
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'top',
+          }}
+          fetchPriority='high'
+          loading='eager'
+        />
+        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-10'>
           <div className='flex items-center justify-center h-full w-full'>
             <img
               src='/isotipo.svg'
@@ -34,14 +44,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Image
-          src='/hero.webp'
-          alt='hero image'
-          className='w-full h-full object-cover object-top max-h-screen'
-          width={1000}
-          height={1000}
-          priority
-        />
       </div>
       <HomeAbout />
       <div className='flex items-center justify-center relative bg-black/50 py-30'>

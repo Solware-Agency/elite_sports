@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <header className='flex justify-between items-center py-5 px-10 absolute top-0 left-0 right-0 z-10'>
+    <header className='flex justify-between items-center py-5 px-10 absolute top-0 left-0 right-0 z-50'>
       <Image src='/eliteLogo.svg' alt='logo' width={238} height={100} />
       <nav>
         <ul className='flex gap-4 text-lg font-roboto text-light'>

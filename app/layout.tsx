@@ -56,7 +56,7 @@ export default function RootLayout({
       />
 
       {/* Preload de imágenes críticas */}
-      <link rel='preload' href='/hero.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/hero.webp' as='image' type='image/webp' fetchPriority='high' />
       <link rel='preload' href='/isotipo.svg' as='image' type='image/svg+xml' />
       <link
         rel='preload'
