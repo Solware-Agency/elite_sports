@@ -57,6 +57,7 @@ export default function RootLayout({
       />
       <link rel='preload' href='/about-2.webp' as='image' type='image/webp' />
       <link rel='preload' href='/about-3.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/frase.webp' as='image' type='image/webp' />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
