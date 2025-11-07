@@ -23,7 +23,7 @@ const partners = [
   },
   {
     name: 'Elite',
-    image: '/elitelogo.webp',
+    image: '/eliteCorporatelogo.webp',
   },
   {
     name: 'Tower',
