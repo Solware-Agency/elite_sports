@@ -22,14 +22,14 @@ export default function Home() {
         />
         <div className='absolute top-0 left-0 right-0 bottom-0 z-10'>
           <div className='flex flex-col items-center justify-center h-full w-full px-4 max-w-full overflow-hidden'>
-            <h1 className='text-light md:text-6xl font-extrabold uppercase max-w-full wrap-break-word text-left translate-y-[245px]'>
+            <h1 className='text-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase max-w-full wrap-break-word text-left leading-none'>
               WE Are
             </h1>
             <Image
               src='/eliteLogo.svg'
-              className='w-[838px] h-[700px] object-contain object-center'
+              className='object-contain object-center max-w-2xl mx-auto w-full'
               alt='logo'
-              width={1920}
+              width={1970}
               height={1080}
             />
             <ArrowDown className='size-5 text-light animate-bounce md:hidden mt-10' />
@@ -48,17 +48,17 @@ export default function Home() {
         </div>
       </div>
       <AboutUs />
-      <div className='bg-lightBlue px-15 py-20'>
+      <div className='bg-lightBlue px-10 py-20'>
         <h2 className='text-black text-2xl font-roboto font-medium uppercase mb-20'>
           Services
         </h2>
         <div className='flex flex-col items-center justify-center gap-10 w-full max-w-7xl mx-auto'>
           <div className='flex flex-col items-center justify-center gap-5 w-full relative'>
             <div className='z-20 py-50'>
-              <h1 className='text-light text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
+              <h1 className='text-light text-3xl md:text-5xl lg:text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
                 Athletes
               </h1>
-              <p className='text-light text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
+              <p className='text-light lg:text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
                 Elevate Your Career Beyond the Court.
               </p>
             </div>
@@ -73,10 +73,10 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-center justify-center gap-5 w-full relative'>
             <div className='z-20 py-50'>
-              <h1 className='text-light text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
+              <h1 className='text-light text-3xl md:text-5xl lg:text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
                 Organizations
               </h1>
-              <p className='text-light text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
+              <p className='text-light lg:text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
                 Authentic Partnerships That Deliver Impact.
               </p>
             </div>
@@ -91,10 +91,10 @@ export default function Home() {
           </div>
           <div className='flex flex-col items-center justify-center gap-5 w-full relative'>
             <div className='z-20 py-50'>
-              <h1 className='text-light text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
+              <h1 className='text-light text-3xl md:text-5xl lg:text-8xl font-judson uppercase text-center max-w-full wrap-break-word'>
                 Clubs
               </h1>
-              <p className='text-light text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
+              <p className='text-light lg:text-2xl font-roboto font-light uppercase text-center max-w-full wrap-break-word'>
                 Expand Your Reach. Strengthen Your Community.
               </p>
             </div>

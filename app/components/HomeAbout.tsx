@@ -19,13 +19,13 @@ function HomeAbout() {
             Management?
           </p>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-10 gap-5 max-w-7xl mx-auto'>
-          <div className='flex flex-col'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl mx-auto'>
+          <a href='/athletes' className='flex flex-col p-7 shadow-xl rounded-lg transition-all cursor-pointer group'>
             <div className='col-span-1 w-auto h-[445px] overflow-hidden rounded-sm mb-5'>
               <Image
                 src='/hero.webp'
                 alt='about 1'
-                className='w-full h-full object-cover object-center'
+                className='w-full h-full object-cover object-center group-hover:scale-105 transition-all'
                 width={500}
                 height={500}
               />
@@ -36,13 +36,13 @@ function HomeAbout() {
             <p className='text-darkBlue text-lg font-mono font-medium uppercase'>
               unlock your potential
             </p>
-          </div>
-          <div className='flex flex-col'>
+          </a>
+          <a href='/clubs' className='flex flex-col p-7 shadow-xl rounded-lg transition-all cursor-pointer group'>
             <div className='col-span-1 w-auto h-[445px] overflow-hidden rounded-sm mb-5'>
               <Image
                 src='/about-2.webp'
                 alt='about 1'
-                className='w-full h-full object-cover object-center'
+                className='w-full h-full object-cover object-center group-hover:scale-105 transition-all'
                 width={500}
                 height={500}
               />
@@ -53,13 +53,13 @@ function HomeAbout() {
             <p className='text-darkBlue text-lg font-mono font-medium uppercase'>
               Create Meaningful Impact
             </p>
-          </div>
-          <div className='flex flex-col'>
+          </a>
+          <a href='/clubs' className='flex flex-col p-7 shadow-xl rounded-lg transition-all cursor-pointer group'>
             <div className='col-span-1 w-auto h-[445px] overflow-hidden rounded-sm mb-5'>
               <Image
                 src='/about-3.webp'
                 alt='about 1'
-                className='w-full h-full object-cover object-center'
+                className='w-full h-full object-cover object-center group-hover:scale-105 transition-all'
                 width={500}
                 height={500}
               />
@@ -70,7 +70,7 @@ function HomeAbout() {
             <p className='text-darkBlue text-lg font-mono font-medium uppercase'>
               Grow Your Community
             </p>
-          </div>
+          </a>
         </div>
       </div>
   )

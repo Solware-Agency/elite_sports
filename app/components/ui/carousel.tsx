@@ -28,6 +28,8 @@ type CarouselContextProps = {
   scrollNext: () => void;
   canScrollPrev: boolean;
   canScrollNext: boolean;
+  selectedIndex: number;
+  scrollTo: (index: number) => void;
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -61,12 +63,21 @@ function Carousel({
   );
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const onSelect = React.useCallback((api: CarouselApi) => {
     if (!api) return;
     setCanScrollPrev(api.canScrollPrev());
     setCanScrollNext(api.canScrollNext());
+    setSelectedIndex(api.selectedScrollSnap());
   }, []);
+
+  const scrollTo = React.useCallback(
+    (index: number) => {
+      api?.scrollTo(index);
+    },
+    [api],
+  );
 
   const scrollPrev = React.useCallback(() => {
     api?.scrollPrev();
@@ -117,6 +128,8 @@ function Carousel({
         scrollNext,
         canScrollPrev,
         canScrollNext,
+        selectedIndex,
+        scrollTo,
       }}
     >
       <div
@@ -186,9 +199,9 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        'absolute size-10 rounded-full cursor-pointer text-redd',
+        'absolute size-10 rounded-full cursor-pointer text-redd hidden md:flex',
         orientation === 'horizontal'
-          ? 'top-1/2 -left-30 -translate-y-1/2'
+          ? 'top-1/2 -left-12 -translate-y-1/2'
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
         className,
       )}
@@ -215,9 +228,9 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        'absolute size-10 rounded-full cursor-pointer text-redd',
+        'absolute size-10 rounded-full cursor-pointer text-redd hidden md:flex',
         orientation === 'horizontal'
-          ? 'top-1/2 -right-30 -translate-y-1/2'
+          ? 'top-1/2 -right-12 -translate-y-1/2'
           : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
         className,
       )}
@@ -230,6 +243,54 @@ function CarouselNext({
   );
 }
 
+function CarouselDots({
+  className,
+  ...props
+}: React.ComponentProps<'div'>) {
+  const { api, selectedIndex, scrollTo } = useCarousel();
+  const [slidesCount, setSlidesCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    const updateSlidesCount = () => {
+      setSlidesCount(api.scrollSnapList().length);
+    };
+
+    updateSlidesCount();
+    api.on('reInit', updateSlidesCount);
+
+    return () => {
+      api.off('reInit', updateSlidesCount);
+    };
+  }, [api]);
+
+  if (slidesCount === 0) return null;
+
+  return (
+    <div
+      className={cn('flex justify-center gap-2 mt-4', className)}
+      data-slot='carousel-dots'
+      {...props}
+    >
+      {Array.from({ length: slidesCount }).map((_, index) => (
+        <button
+          key={index}
+          type='button'
+          onClick={() => scrollTo(index)}
+          className={cn(
+            'h-2 rounded-full transition-all duration-300 cursor-pointer',
+            selectedIndex === index
+              ? 'w-8 bg-redd'
+              : 'w-2 bg-redd/50 hover:bg-redd/70',
+          )}
+          aria-label={`Ir al slide ${index + 1}`}
+        />
+      ))}
+    </div>
+  );
+}
+
 export {
   type CarouselApi,
   Carousel,
@@ -237,4 +298,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 };

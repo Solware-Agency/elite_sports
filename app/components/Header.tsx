@@ -42,7 +42,7 @@ function Header() {
   return (
     <>
       <header
-        className={`flex justify-between items-center py-2 px-10 fixed top-0 left-0 right-0 z-50 transition-all ${
+        className={`flex justify-between items-center py-2 px-5 fixed top-0 left-0 right-0 z-50 transition-all ${
           isScrolled ? 'bg-light' : 'bg-transparent'
         }`}
       >
@@ -142,7 +142,7 @@ function Header() {
             <ul className='flex flex-col gap-6'>
               <li>
                 <Link
-                  href='/'
+                  href='/about'
                   onClick={handleLinkClick}
                   className='text-lg font-roboto text-black hover:text-black/70 transition-colors block py-2'
                 >
@@ -151,7 +151,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='/athletes'
                   onClick={handleLinkClick}
                   className='text-lg font-roboto text-black hover:text-black/70 transition-colors block py-2'
                 >
@@ -160,7 +160,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='#footer'
                   onClick={handleLinkClick}
                   className='text-lg font-roboto text-black hover:text-black/70 transition-colors block py-2'
                 >
@@ -169,7 +169,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  href='/'
+                  href='/clubs'
                   onClick={handleLinkClick}
                   className='text-lg font-roboto text-black hover:text-black/70 transition-colors block py-2'
                 >

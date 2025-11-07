@@ -15,10 +15,10 @@ export default function Athletes() {
         />
         <div className='absolute top-0 left-0 right-0 bottom-0 z-10 bg-black/30'>
           <div className='flex flex-col items-center justify-center h-full w-full px-4 max-w-full overflow-hidden'>
-            <h1 className='text-light text-8xl font-extrabold uppercase max-w-full wrap-break-word text-center'>
+            <h1 className='text-light text-4xl md:text-5xl lg:text-8xl font-extrabold uppercase max-w-full wrap-break-word text-center'>
               Athletes
             </h1>
-            <ArrowDown className='size-5 text-light animate-bounce md:hidden mt-10' />
+            <ArrowDown className='size-5 text-light animate-bounce md:hidden mt-5' />
           </div>
           <div className='flex items-center justify-between absolute bottom-10 left-0 right-0 px-10'>
             <div className='flex items-center justify-center gap-20'>
@@ -34,9 +34,9 @@ export default function Athletes() {
         </div>
       </div>
       <div className='px-5 md:px-15 py-20'>
-        <div className='flex justify-center items-center max-w-6xl mx-auto '>
+        <div className='flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto '>
           <div className='relative w-full h-full justify-center items-center flex flex-col'>
-            <h3 className='text-darkBlue text-xl font-mono font-bold uppercase absolute bottom-10 text-center bg-light px-8 py-2 rounded-sm'>
+            <h3 className='text-darkBlue text-sm md:text-xl font-mono font-bold uppercase absolute bottom-10 text-center bg-light px-4 md:px-8 py-2 rounded-sm'>
               CLEMENTINA RIOBUENO
             </h3>
             <Image
@@ -48,7 +48,7 @@ export default function Athletes() {
             />
           </div>
           <div className='relative w-full h-full justify-center items-center flex flex-col'>
-            <h3 className='text-darkBlue text-xl font-mono font-bold uppercase absolute bottom-10 text-center bg-light px-8 py-2 rounded-sm'>
+            <h3 className='text-darkBlue text-sm md:text-xl font-mono font-bold uppercase absolute bottom-10 text-center bg-light px-4 md:px-8 py-2 rounded-sm'>
               GUILLERMO CAGIGAS
             </h3>
             <Image

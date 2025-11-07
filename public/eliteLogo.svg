@@ -1,26 +1,26 @@
 <svg
-  width="238"
-  height="100"
-  viewBox="0 0 238 100"
+  width="670"
+  height="166"
+  viewBox="0 0 670 166"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  <rect width="238" height="100" fill="url(#pattern0_1005_41)" />
+  <rect width="670" height="166" fill="url(#pattern0_1011_29)" />
   <defs>
     <pattern
-      id="pattern0_1005_41"
+      id="pattern0_1011_29"
       patternContentUnits="objectBoundingBox"
       width="1"
       height="1"
     >
       <use
-        xlink:href="#image0_1005_41"
-        transform="matrix(0.000925926 0 0 0.00220483 0 -1.59177)"
+        xlink:href="#image0_1011_29"
+        transform="matrix(0.000925926 0 0 0.00373227 0 -3.05595)"
       />
     </pattern>
     <image
-      id="image0_1005_41"
+      id="image0_1011_29"
       width="1080"
       height="1920"
       preserveAspectRatio="none"

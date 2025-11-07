@@ -4,6 +4,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselDots,
 } from './ui/carousel';
 
 const clients = [
@@ -68,25 +69,25 @@ const clients = [
 
 function FromOurClients() {
   return (
-    <div className='bg-lightBlue px-15 py-20'>
+    <div className='bg-lightBlue px-10 py-20'>
       <h2 className='text-black text-2xl font-roboto font-medium uppercase mb-20'>
         from our clients
       </h2>
-      <Carousel className='w-full max-w-[80%] mx-auto py-40'>
+      <Carousel className='w-full lg:max-w-[80%] mx-auto lg:py-40'>
         <CarouselContent>
           {clients.map((client, index) => (
             <CarouselItem key={index}>
-              <div className='p-1 flex items-center justify-between gap-20 w-full'>
-                <div className='flex flex-col items-start justify-center gap-5'>
-                  <h3 className='text-darkBlue text-7xl font-extrabold font-inter uppercase'>
+              <div className='flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-20 w-full'>
+                <div className='flex flex-col items-start justify-center lg:gap-5'>
+                  <h3 className='text-darkBlue text-3xl sm:text-4xl lg:text-7xl font-extrabold font-inter uppercase'>
                     {client.title}
                   </h3>
-                  <p className='text-darkBlue text-xl font-mono font-bold uppercase'>
+                  <p className='text-darkBlue lg:text-xl font-mono font-bold uppercase'>
                     {client.subtitle}
                   </p>
                 </div>
                 <div className='flex flex-col items-start justify-center max-w-2xl'>
-                  <div className='text-black text-sm font-roboto font-light uppercase'>
+                  <div className='text-black text-xs lg:text-sm font-roboto font-light uppercase'>
                     {client.description}
                   </div>
                 </div>
@@ -96,6 +97,7 @@ function FromOurClients() {
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
+        <CarouselDots />
       </Carousel>
     </div>
   );

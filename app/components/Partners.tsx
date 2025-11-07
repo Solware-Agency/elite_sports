@@ -40,7 +40,7 @@ function Partners() {
       <h1 className='text-light lg:text-6xl sm:text-5xl text-3xl font-mono font-semibold uppercase text-center mb-20'>
         partners
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-6xl mx-auto px-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-6xl mx-auto px-20'>
         {partners.map((partner) => (
           <div
             key={partner.name}
