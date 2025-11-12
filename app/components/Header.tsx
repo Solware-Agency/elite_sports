@@ -37,7 +37,7 @@ function Header() {
   const pathname = usePathname();
   const isAboutPage = pathname === '/about';
   const isAthletesPage = pathname === '/athletes';
-  const isContactPage = pathname === '/#footer';
+  // const isContactPage = pathname === '/#footer';
   const isClubsPage = pathname === '/clubs';
   return (
     <>
@@ -49,12 +49,12 @@ function Header() {
         <Image
           src='/eliteLogo.svg'
           onClick={() => router.push('/')}
-          className={`w-[150px] h-[60px] md:w-[238px] md:h-[100px] cursor-pointer ${
+          className={`w-[150px] h-[60px] md:w-[338px] md:h-[100px] cursor-pointer ${
             isScrolled ? 'brightness-0' : ''
           }`}
           alt='logo'
-          width={1920}
-          height={1080}
+          width={568}
+          height={184}
         />
         <nav>
           <ul
@@ -134,7 +134,9 @@ function Header() {
                 <Link
                   href='/about'
                   onClick={handleLinkClick}
-                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${isAboutPage ? 'underline' : ''}`}
+                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${
+                    isAboutPage ? 'underline' : ''
+                  }`}
                 >
                   About
                 </Link>
@@ -143,7 +145,9 @@ function Header() {
                 <Link
                   href='/athletes'
                   onClick={handleLinkClick}
-                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${isAthletesPage ? 'underline' : ''}`}
+                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${
+                    isAthletesPage ? 'underline' : ''
+                  }`}
                 >
                   Athletes
                 </Link>
@@ -152,7 +156,9 @@ function Header() {
                 <Link
                   href='/clubs'
                   onClick={handleLinkClick}
-                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${isClubsPage ? 'underline' : ''}`}
+                  className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${
+                    isClubsPage ? 'underline' : ''
+                  }`}
                 >
                   Clubs | Organizations
                 </Link>

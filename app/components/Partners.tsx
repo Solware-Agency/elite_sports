@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import { InfiniteMovingCards } from './ui/infinite-moving-cards';
 
-const partners = [
+const items = [
   {
     name: 'Pro pade',
     image: '/propadellogo.webp',
@@ -40,22 +41,7 @@ function Partners() {
       <h1 className='text-light lg:text-6xl sm:text-5xl text-3xl font-roboto-mono font-medium uppercase text-center mb-20'>
         partners
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-6xl mx-auto px-20'>
-        {partners.map((partner) => (
-          <div
-            key={partner.name}
-            className='flex items-center justify-center bg-light p-5 aspect-square'
-          >
-            <Image
-              src={partner.image}
-              alt={partner.name}
-              width={1920}
-              height={1080}
-              className='w-full h-full object-contain object-center'
-            />
-          </div>
-        ))}
-      </div>
+      <InfiniteMovingCards items={items} speed='normal'/>
       <Image
         src='/2.webp'
         alt='Partners'

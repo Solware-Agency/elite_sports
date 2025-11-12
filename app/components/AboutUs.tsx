@@ -79,30 +79,6 @@ function AboutUs() {
           that drive measurable results.
         </p>
       </div>
-      <div className='flex justify-center gap-5 mb-20'>
-        <h1 className='text-darkBlue text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold font-inter uppercase'>
-          Our founder
-        </h1>
-      </div>
-      <div className='flex flex-col items-center justify-center gap-5 mb-20'>
-        <h2 className='text-darkBlue md:text-2xl font-semibold font-condensed uppercase mb-5 text-center'>
-          An Athlete&apos;s Drive. A Leader&apos;s Vision.
-        </h2>
-        <p className='text-darkBlue text-lg font-condensed font-medium text-center uppercase max-w-6xl'>
-          I&apos;m Dhanielly Quevedo — a top-ranked U.S. padel athlete and
-          former Division I tennis player. Competing at an elite level has
-          taught me discipline, resilience, and purpose. Off the court,
-          I&apos;ve spent nearly a decade leading corporate communications for
-          global brands — from Fortune 100 companies to fast-growing startups.
-          <br />
-          <br />
-          That unique blend of experience — athlete + brand strategist —
-          inspired me to build a platform where representation goes beyond
-          contracts and becomes collaboration. Elite Sports Management was
-          created to help athletes, clubs, and organizations thrive together —
-          through integrity, creativity, and a shared passion for the game.
-        </p>
-      </div>
     </div>
   );
 }
