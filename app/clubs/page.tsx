@@ -4,6 +4,7 @@ import { ArrowDown, CopyrightIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import FromOurClients from '../components/FromOurClients';
+import Desing from '../components/Desing';
 
 interface ClubInfo {
   name: string;
@@ -18,7 +19,7 @@ const clubs: {
 } = {
   sixLoveSports: {
     name: '6 LOVE SPORTS',
-    image: '/about-2.webp',
+    image: '/clubs-and-org.webp',
     since: '2024',
     founder: 'ANDREA NEUGARTEN',
     description: (
@@ -53,9 +54,9 @@ export default function Clubs() {
     <>
       <div className='flex max-h-screen items-center justify-center font-sans relative h-screen w-full overflow-hidden'>
         <img
-          src='/padel.webp'
+          src='/about-2.webp'
           alt='hero image'
-          className='absolute top-0 left-0 w-full h-full object-cover object-bottom-right z-0 scale-150'
+          className='absolute top-0 left-0 w-full h-full object-cover object-bottom z-0'
           fetchPriority='high'
           loading='eager'
         />
@@ -146,44 +147,7 @@ export default function Clubs() {
         )}
       </div>
       <FromOurClients />
-      <div className='grid grid-cols-3'>
-        <div className='col-span-1'>
-          <Image
-            src='/padel1.webp'
-            alt='athletes'
-            className='w-full h-full object-cover object-center filter grayscale-100'
-            width={1920}
-            height={1080}
-          />
-        </div>
-        <div className='col-span-1 relative'>
-          <div className='absolute inset-0 z-20 flex items-center justify-center'>
-            <Image
-              src='/eliteLogo.svg'
-              alt='athletes'
-              className='w-3/4 h-3/4 object-contain'
-              width={1920}
-              height={1080}
-            />
-          </div>
-          <Image
-            src='/vector.webp'
-            alt='athletes'
-            className='w-full h-full object-cover object-center'
-            width={1920}
-            height={1080}
-          />
-        </div>
-        <div className='col-span-1'>
-          <Image
-            src='/padel2.webp'
-            alt='athletes'
-            className='w-full h-full object-cover object-center filter grayscale-100'
-            width={1920}
-            height={1080}
-          />
-        </div>
-      </div>
+      <Desing />
     </>
   );
 }

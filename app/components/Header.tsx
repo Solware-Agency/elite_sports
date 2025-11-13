@@ -35,7 +35,7 @@ function Header() {
   }, [isOpen]);
 
   const pathname = usePathname();
-  const isAboutPage = pathname === '/about';
+  const isServicesPage = pathname === '/services';
   const isAthletesPage = pathname === '/athletes';
   // const isContactPage = pathname === '/#footer';
   const isClubsPage = pathname === '/clubs';
@@ -64,10 +64,10 @@ function Header() {
           >
             <li>
               <Link
-                href='/about'
-                className={`hover:underline ${isAboutPage ? 'underline' : ''}`}
+                href='/services'
+                className={`hover:underline ${isServicesPage ? 'underline' : ''}`}
               >
-                About
+                Services
               </Link>
             </li>
             <li>
@@ -132,13 +132,13 @@ function Header() {
             <ul className='flex flex-col gap-6'>
               <li>
                 <Link
-                  href='/about'
+                  href='/services'
                   onClick={handleLinkClick}
                   className={`text-lg font-roboto font-light text-black hover:text-black/70 transition-colors block py-2 ${
-                    isAboutPage ? 'underline' : ''
+                    isServicesPage ? 'underline' : ''
                   }`}
                 >
-                  About
+                  Services
                 </Link>
               </li>
               <li>

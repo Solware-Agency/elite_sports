@@ -37,18 +37,11 @@ const items = [
 ];
 function Partners() {
   return (
-    <div className='flex flex-col items-center justify-center relative bg-black/50 py-20'>
-      <h1 className='text-light lg:text-6xl sm:text-5xl text-3xl font-roboto-mono font-medium uppercase text-center mb-20'>
+    <div className='flex flex-col items-center justify-center  p-20'>
+      <h1 className='text-darkBlue lg:text-6xl sm:text-5xl text-3xl font-roboto-mono font-medium uppercase text-center mb-20'>
         partners
       </h1>
       <InfiniteMovingCards items={items} speed='normal'/>
-      <Image
-        src='/2.webp'
-        alt='Partners'
-        className='w-full h-full object-cover object-top absolute top-0 left-0 right-0 bottom-0 -z-10'
-        width={1920}
-        height={1080}
-      />
     </div>
   );
 }
