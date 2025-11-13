@@ -162,6 +162,18 @@ export default function RootLayout({
       <link rel='preload' href='/3.webp' as='image' type='image/webp' />
       <link rel='preload' href='/2.webp' as='image' type='image/webp' />
       <link rel='preload' href='/vector.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/desingGirl.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/eliteManageLogo.svg' as='image' type='image/svg+xml' />
+      <link rel='preload' href='/frase.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/clubs-and-org.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/about-2.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/about-3.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/hero.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/athleteshero.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/home-clubs.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/home-orga.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/founder.webp' as='image' type='image/webp' />
+
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${robotoCondensed.variable} ${judson.variable} ${roboto.variable} ${robotoMono.variable} antialiased`}
