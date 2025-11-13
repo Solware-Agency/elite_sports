@@ -173,6 +173,8 @@ export default function RootLayout({
       <link rel='preload' href='/home-clubs.webp' as='image' type='image/webp' />
       <link rel='preload' href='/home-orga.webp' as='image' type='image/webp' />
       <link rel='preload' href='/founder.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/athletes.webp' as='image' type='image/webp' />
+      <link rel='preload' href='/team.webp' as='image' type='image/webp' />
 
 
       <body
