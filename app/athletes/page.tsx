@@ -22,7 +22,7 @@ const athletes: {
 } = {
   clementina: {
     name: 'CLEMENTINA RIOBUENO',
-    image: '/hero.webp',
+    image: '/clementina.webp',
     dob: '9/28/1994',
     birthplace: 'BARQUISIMETO, VENEZUELA',
     height: "5'8",
@@ -96,9 +96,9 @@ export default function Athletes() {
     <>
       <div className='flex max-h-screen items-center justify-center font-sans relative h-screen w-full overflow-hidden'>
         <img
-          src='/athleteshero.webp'
+          src='/athletes.webp'
           alt='hero image'
-          className='absolute top-0 left-0 w-full h-full object-cover object-[50%_65%] z-0'
+          className='absolute top-0 left-0 w-full h-full object-cover object-[50%_50%] z-0'
           fetchPriority='high'
           loading='eager'
         />

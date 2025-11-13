@@ -155,9 +155,9 @@ export default function Home() {
             </div>
             <div className='bg-gray-700/50 bg w-full h-full absolute top-0 left-0 right-0 bottom-0 z-10'></div>
             <Image
-              src='/hero.webp'
+              src='/servathletes.webp'
               alt='frase'
-              className='w-full h-full object-cover object-[50%_20%] absolute top-0 left-0 right-0 bottom-0'
+              className='w-full h-full object-cover object-[50%_40%] absolute top-0 left-0 right-0 bottom-0'
               width={1920}
               height={1080}
             />
