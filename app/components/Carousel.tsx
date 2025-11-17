@@ -12,8 +12,6 @@ const images = [
   '/about-2.webp',
   '/clubs-and-org.webp',
   '/home-clubs.webp',
-  '/athletes.webp',
-  '/team.webp',
 ];
 
 export function CarouselElement() {
@@ -31,6 +29,24 @@ export function CarouselElement() {
             />
           </CarouselItem>
         ))}
+        <CarouselItem>
+            <Image
+              src='/athletes.webp'
+              alt='athletes'
+              width={1920}
+              height={1080}
+              className='w-full lg:h-[600px] md:h-[400px] h-[200px] object-cover object-top rounded-lg'
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <Image
+              src='/team.webp'
+              alt='team'
+              width={1920}
+              height={1080}
+              className='w-full lg:h-[600px] md:h-[400px] h-[200px] object-cover object-top rounded-lg'
+            />
+          </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
