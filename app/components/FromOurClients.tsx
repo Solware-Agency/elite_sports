@@ -79,10 +79,10 @@ function FromOurClients() {
             <CarouselItem key={index}>
               <div className='flex flex-col xl:flex-row items-start xl:items-center justify-between gap-10 lg:gap-20 max-w-6xl mx-auto'>
                 <div className='flex flex-col items-start justify-center lg:gap-5'>
-                  <h3 className='text-darkBlue text-3xl sm:text-4xl lg:text-8xl font-extrabold font-inter uppercase'>
+                  <h3 className='text-darkBlue text-3xl sm:text-4xl lg:text-8xl font-denton uppercase'>
                     {client.title}
                   </h3>
-                  <p className='text-darkBlue lg:text-xl font-roboto-mono font-medium uppercase'>
+                  <p className='text-darkBlue lg:text-xl font-neue-roman font-medium uppercase'>
                     {client.subtitle}
                   </p>
                 </div>
