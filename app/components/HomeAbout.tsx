@@ -7,10 +7,10 @@ function HomeAbout() {
         About
       </h2>
       <div className='max-w-7xl mx-auto'>
-        <div className='flex flex-col md:flex-row items-start md:items-end justify-start gap-5 mb-10'>
-          <h1 className='text-darkBlue md:text-7xl/15 sm:text-5xl/10 text-4xl/10 font-denton uppercase text-left'>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-5 mb-10'>
+          <h1 className='text-darkBlue md:text-7xl/15 sm:text-5xl/10 text-4xl/10 font-denton uppercase text-center'>
             EXCELLENCE IN
-            <br />
+            {/* <br /> */}
             EVERY MOVE
           </h1>
         </div>
