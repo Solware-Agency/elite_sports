@@ -22,15 +22,15 @@ const clubs: {
     founder: 'ANDREA NEUGARTEN',
     description: (
       <>
-        6 LOVE SPORTS (6LS) IS THE LARGEST AND FASTEST-GROWING WOMEN&apos;S
-        PADEL COMMUNITY IN THE UNITED STATES.
+        6 love sports (6LS) is the largest and fastest-growing women&apos;s
+        padel community in the united states.
         <br />
-        <br />A MOVEMENT BUILT ON EMPOWERMENT, COMMUNITY, AND OPPORTUNITY. WE
-        BRING TOGETHER ACTIVE, HEALTH-CONSCIOUS, AND SOCIALLY CONNECTED WOMEN
-        WHO LOVE THE SPORT OF PADEL AND THE CULTURE AROUND IT. RECOGNIZED BY THE
-        U.S. PADEL ASSOCIATION (USPA) AS A CERTIFIED PREMIER COMMUNITY, 6LS
-        REPRESENTS EXCELLENCE, CREDIBILITY, AND LEADERSHIP IN GROWING
-        WOMEN&apos;S PADEL NATIONWIDE.
+        <br />a movement built on empowerment, community, and opportunity. we
+        bring together active, health-conscious, and socially connected women
+        who love the sport of padel and the culture around it. recognized by the
+        u.s. padel association (USPA) as a certified premier community, 6LS
+        represents excellence, credibility, and leadership in growing
+        women&apos;s padel nationwide.
       </>
     ),
   },
@@ -117,7 +117,7 @@ export default function Clubs() {
                     </span>
                   </p>
                 </div>
-                <p className='text-darkBlue text-sm md:text-base font-condensed uppercase leading-relaxed'>
+                <p className='text-darkBlue text-sm md:text-lg font-condensed leading-relaxed'>
                   {selectedClub.description}
                 </p>
               </div>

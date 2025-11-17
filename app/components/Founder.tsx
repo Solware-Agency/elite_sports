@@ -12,7 +12,7 @@ function Founder() {
           </p>
         </div>
         <div className='flex flex-col items-center justify-center gap-5'>
-          <p className='text-light text-lg font-condensed font-normal text-center uppercase max-w-6xl'>
+          <p className='text-light text-lg font-condensed font-normal text-center max-w-6xl'>
             I&apos;m Dhanielly Quevedo — a top-ranked U.S. padel athlete and
             former Division I tennis player. Competing at an elite level has
             taught me discipline, resilience, and purpose. Off the court,

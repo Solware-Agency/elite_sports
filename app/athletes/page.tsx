@@ -172,7 +172,7 @@ export default function Athletes() {
                         </span>
                       </p>
                     </div>
-                    <p className='text-darkBlue text-sm md:text-base font-condensed uppercase leading-relaxed'>
+                    <p className='text-darkBlue text-sm md:text-lg font-condensed leading-relaxed'>
                       {selectedAthlete.biography}
                     </p>
                   </div>
@@ -212,7 +212,7 @@ export default function Athletes() {
                         </span>
                       </p>
                     </div>
-                    <p className='text-darkBlue text-sm md:text-base font-condensed uppercase leading-relaxed'>
+                    <p className='text-darkBlue text-sm md:text-lg font-condensed leading-relaxed'>
                       {selectedAthlete.biography}
                     </p>
                   </div>

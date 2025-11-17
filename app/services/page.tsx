@@ -123,27 +123,24 @@ export default function Home() {
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                         REPRESENTATION & SPONSORSHIPS
                       </h3>
-                      <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light'>
-                        SECURE PARTNERSHIPS THAT ALIGN WITH YOUR VALUES AND
-                        CAREER ASPIRATIONS.
+                      <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
+                        Secure partnerships that align with your values and career aspirations.
                       </p>
                     </div>
                     <div className='text-left max-w-xs'>
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                         BRAND DEVELOPMENT
                       </h3>
-                      <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light'>
-                        BUILD YOUR PERSONAL IDENTITY THROUGH MEDIA KITS,
-                        STORYTELLING, AND IMAGE CONSULTING.
+                      <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
+                        Build your personal identity through media kits, storytelling, and image consulting.
                       </p>
                     </div>
                     <div className='text-left max-w-xs'>
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                         MEDIA & SOCIAL GUIDANCE
                       </h3>
-                      <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light'>
-                        GROW YOUR VISIBILITY, ENGAGE YOUR AUDIENCE, AND ATTRACT
-                        THE RIGHT BRANDS.
+                      <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
+                        Grow your visibility, engage your audience, and attract the right brands.
                       </p>
                     </div>
                   </div>
@@ -209,7 +206,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Sponsorship Strategy & Support
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Identify, negotiate, and secure brand partners for
                           <br />
                           your tournaments or club events.
@@ -219,7 +216,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Athlete Engagement Programs
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Connect with pros for clinics, exhibitions, or
                           <br />
                           ambassador roles that inspire your community.
@@ -231,7 +228,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Event Management & Activation
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           From branded tournaments to seasonal campaigns,
                           <br /> we help design experiences that stand out.
                         </p>
@@ -240,7 +237,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Marketing & Communication Consulting
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Position your club as a leader in the sport with
                           strong <br />
                           storytelling and digital presence.
@@ -309,7 +306,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Athlete Collaborations
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Partner with athletes who embody your
                           <br /> brand’s mission and values.
                         </p>
@@ -318,7 +315,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Event & Activation Planning
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Bring your brand to life through tournaments,
                           <br /> community events, or experiential campaigns.
                         </p>
@@ -329,7 +326,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Content & Storytelling
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Leverage authentic athlete voices to
                           <br /> drive brand awareness and engagement.
                         </p>
@@ -338,7 +335,7 @@ export default function Home() {
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-condensed font-normal uppercase mb-2'>
                           Consulting & Market Entry
                         </h3>
-                        <p className='text-light text-xs md:text-md lg:text-base font-condensed font-light uppercase'>
+                        <p className='text-light text-xs md:text-md lg:text-lg font-condensed font-light'>
                           Enter the U.S. padel scene with confidence <br />{' '}
                           through insights, partnerships, and
                           <br /> local expertise.
