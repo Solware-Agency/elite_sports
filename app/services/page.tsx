@@ -101,14 +101,14 @@ export default function Home() {
               <div
                 className={`${
                   isAthletesOpen ? 'relative' : 'absolute'
-                } inset-0 flex flex-col items-center transition-all duration-500 py-24 ${
+                } inset-0 flex flex-col items-center transition-all duration-500 py-24 px-5 ${
                   isAthletesOpen ? '' : 'translate-y-full'
                 } md:absolute md:translate-y-full md:group-hover:translate-y-0`}
               >
                 {/* Lado Izquierdo */}
                 <div className='flex flex-col items-center justify-between h-full w-full mx-auto'>
                   <div className='flex flex-col items-center justify-center w-full mb-10 md:mb-0'>
-                    <h1 className='text-light text-3xl md:text-5xl font-denton uppercase text-center'>
+                    <h1 className='text-light text-3xl md:text-5xl font-denton uppercase text-center max-w-xs md:max-w-full mx-auto'>
                       ELEVATE YOUR CAREER BEYOND THE COURT.
                     </h1>
                     <p className='text-light text-sm md:text-lg font-neue-roman text-center leading-relaxed max-w-6xl mx-auto'>
@@ -116,8 +116,8 @@ export default function Home() {
                       OPPORTUNITIES THAT REFLECT THEIR TALENT, STORY, AND GOALS.
                     </p>
                   </div>
-                  <div className='flex flex-col md:flex-row items-center justify-around w-full gap-5 md:gap-0'>
-                    <div className='text-left max-w-xs'>
+                  <div className='flex flex-col md:flex-row items-center justify-center md:justify-around w-full gap-5'>
+                    <div className='text-left w-full max-w-md'>
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman uppercase mb-2'>
                         REPRESENTATION & SPONSORSHIPS
                       </h3>
@@ -126,7 +126,7 @@ export default function Home() {
                         career aspirations.
                       </p>
                     </div>
-                    <div className='text-left max-w-xs'>
+                    <div className='text-left w-full max-w-md'>
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                         BRAND DEVELOPMENT
                       </h3>
@@ -135,7 +135,7 @@ export default function Home() {
                         storytelling, and image consulting.
                       </p>
                     </div>
-                    <div className='text-left max-w-xs'>
+                    <div className='text-left w-full max-w-md'>
                       <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                         MEDIA & SOCIAL GUIDANCE
                       </h3>
@@ -185,7 +185,7 @@ export default function Home() {
               <div
                 className={`${
                   isClubsOpen ? 'relative' : 'absolute'
-                } inset-0 flex flex-col items-center transition-all duration-500 py-24 ${
+                } inset-0 flex flex-col items-center transition-all duration-500 py-24 px-5 ${
                   isClubsOpen ? '' : 'translate-y-full'
                 } md:absolute md:translate-y-full md:group-hover:translate-y-0`}
               >
@@ -201,9 +201,9 @@ export default function Home() {
                       marketing support.
                     </p>
                   </div>
-                  <div className='flex flex-col md:flex-row items-center justify-around w-full md:gap-0'>
-                    <div className='flex flex-col items-left justify-center gap-5 md:gap-10 max-w-lg'>
-                      <div className='text-left'>
+                  <div className='flex flex-col md:flex-row items-center justify-center md:justify-around w-full gap-5'>
+                    <div className='flex flex-col items-start justify-center gap-5 md:gap-10 max-w-md w-full'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Sponsorship Strategy & Support
                         </h3>
@@ -213,7 +213,7 @@ export default function Home() {
                           your tournaments or club events.
                         </p>
                       </div>
-                      <div className='text-left'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Athlete Engagement Programs
                         </h3>
@@ -224,8 +224,8 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className='flex flex-col items-left justify-center gap-5 md:gap-10 max-w-lg'>
-                      <div className='text-left'>
+                    <div className='flex flex-col items-start justify-center gap-5 md:gap-10 max-w-md w-full'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Event Management & Activation
                         </h3>
@@ -234,7 +234,7 @@ export default function Home() {
                           <br /> we help design experiences that stand out.
                         </p>
                       </div>
-                      <div className='text-left'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Marketing & Communication Consulting
                         </h3>
@@ -285,7 +285,7 @@ export default function Home() {
               <div
                 className={`${
                   isOrganizationsOpen ? 'relative' : 'absolute'
-                } inset-0 flex flex-col items-center transition-all duration-500 py-24 ${
+                } inset-0 flex flex-col items-center transition-all duration-500 py-24 px-5 ${
                   isOrganizationsOpen ? '' : 'translate-y-full'
                 } md:absolute md:translate-y-full md:group-hover:translate-y-0`}
               >
@@ -301,9 +301,9 @@ export default function Home() {
                       audiences that align with their purpose.
                     </p>
                   </div>
-                  <div className='flex flex-col md:flex-row items-center justify-around w-full md:gap-0'>
-                    <div className='flex flex-col items-left justify-center gap-5 md:gap-10 max-w-lg'>
-                      <div className='text-left'>
+                  <div className='flex flex-col md:flex-row items-center justify-center md:justify-around w-full gap-5'>
+                    <div className='flex flex-col items-center justify-center gap-5 md:gap-10 max-w-md w-full'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Athlete Collaborations
                         </h3>
@@ -312,7 +312,7 @@ export default function Home() {
                           <br /> brand’s mission and values.
                         </p>
                       </div>
-                      <div className='text-left'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Event & Activation Planning
                         </h3>
@@ -322,8 +322,8 @@ export default function Home() {
                         </p>
                       </div>
                     </div>
-                    <div className='flex flex-col items-left justify-center gap-5 md:gap-10 max-w-lg'>
-                      <div className='text-left'>
+                    <div className='flex flex-col items-center justify-center gap-5 md:gap-10 max-w-md w-full'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Content & Storytelling
                         </h3>
@@ -332,7 +332,7 @@ export default function Home() {
                           <br /> drive brand awareness and engagement.
                         </p>
                       </div>
-                      <div className='text-left'>
+                      <div className='text-left w-full'>
                         <h3 className='text-light text-base md:text-lg lg:text-2xl font-neue-roman font-normal uppercase mb-2'>
                           Consulting & Market Entry
                         </h3>

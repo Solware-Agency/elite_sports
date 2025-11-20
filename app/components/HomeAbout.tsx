@@ -3,7 +3,7 @@ import Image from 'next/image';
 function HomeAbout() {
   return (
     <div className='px-5 md:px-15 py-20 bg-lightBlue'>
-      <h2 className='text-black text-2xl font-neue-roman uppercase mb-14'>
+      <h2 className='text-black text-sm md:text-2xl font-neue-roman uppercase mb-14'>
         About
       </h2>
       <div className='max-w-7xl mx-auto'>

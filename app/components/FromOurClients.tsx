@@ -70,7 +70,7 @@ const clients = [
 function FromOurClients() {
   return (
     <div className='bg-lightBlue px-10 py-20'>
-      <h2 className='text-black text-2xl font-neue-roman font-medium uppercase mb-20'>
+      <h2 className='text-black text-sm md:text-2xl font-neue-roman font-medium uppercase mb-20'>
         from our clients
       </h2>
       <Carousel className='w-full lg:max-w-[90%] mx-auto'>

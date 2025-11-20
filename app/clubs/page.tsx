@@ -85,7 +85,7 @@ export default function Clubs() {
         {/* Layout dinámico según el club seleccionado */}
         {selectedClub && (
           <div
-            className='flex flex-col md:flex-row max-w-6xl mx-auto cursor-pointer'
+            className='flex flex-col md:flex-row max-w-6xl mx-auto cursor-pointer aspect-video'
             onClick={handleCloseClub}
           >
             {/* Imagen - izquierda */}
@@ -93,7 +93,7 @@ export default function Clubs() {
               <Image
                 src={selectedClub.image}
                 alt={selectedClub.name}
-                className='w-full h-full object-cover object-center aspect-9/12 transition-transform'
+                className='w-full h-full object-cover object-center aspect-video transition-transform'
                 width={1920}
                 height={1080}
                 priority
