@@ -49,7 +49,7 @@ function Header() {
         <Image
           src='/svg/header-logo.svg'
           onClick={() => router.push('/')}
-          className={`w-[150px] h-[60px] md:w-[338px] md:h-[100px] cursor-pointer ${
+          className={`w-[30vh] h-auto md:w-[338px] md:h-[100px] cursor-pointer ${
             isScrolled ? 'brightness-0' : ''
           }`}
           alt='logo'
@@ -106,7 +106,7 @@ function Header() {
       {/* Overlay oscuro */}
       {isOpen && (
         <div
-          className='fixed inset-0 bg-black/50 z-40 md:hidden'
+          className='fixed inset-0 bg-black/50 z-50 md:hidden'
           onClick={() => setIsOpen(false)}
         />
       )}
