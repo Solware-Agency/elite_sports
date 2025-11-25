@@ -11,7 +11,6 @@ function ButtonMessageBot() {
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
 
   useEffect(() => {
-    let showTimeout: NodeJS.Timeout;
     let hideTimeout: NodeJS.Timeout;
     let interval: NodeJS.Timeout;
 
@@ -45,7 +44,6 @@ function ButtonMessageBot() {
     interval = setInterval(startCycle, 10000);
 
     return () => {
-      clearTimeout(showTimeout);
       clearTimeout(hideTimeout);
       clearInterval(interval);
     };
