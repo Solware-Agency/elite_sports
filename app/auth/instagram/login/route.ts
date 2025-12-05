@@ -24,6 +24,18 @@ export async function GET(request: NextRequest) {
       );
     }
 
+    // Validar que las variables estén configuradas antes de construir el URL
+    const appId = process.env.INSTAGRAM_APP_ID;
+    const redirectUri = process.env.INSTAGRAM_REDIRECT_URI;
+    
+    console.log('🔍 Validando variables de entorno de Instagram OAuth:');
+    console.log('  - INSTAGRAM_APP_ID:', appId ? '✅ Configurado' : '❌ No configurado');
+    console.log('  - INSTAGRAM_REDIRECT_URI:', redirectUri ? '✅ Configurado' : '❌ No configurado');
+    
+    if (!appId || !redirectUri) {
+      throw new Error('Variables de entorno de Instagram no configuradas correctamente');
+    }
+
     // Construir la URL de autenticación
     const authUrl = buildInstagramAuthUrl();
 
