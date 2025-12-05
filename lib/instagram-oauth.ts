@@ -3,31 +3,35 @@ import { instagramConfig } from './instagram-config';
 /**
  * Construye la URL de autenticación OAuth de Instagram
  * Esta URL debe ser abierta por el usuario para autorizar la aplicación
+ * 
+ * IMPORTANTE: Usa el endpoint oficial de Instagram OAuth
+ * https://api.instagram.com/oauth/authorize
  */
 export function buildInstagramAuthUrl(): string {
-  const { appId, redirectUri } = instagramConfig;
+  // Leer variables directamente de process.env para asegurar que sean correctas
+  const clientId = process.env.INSTAGRAM_APP_ID;
+  const redirectUri = process.env.INSTAGRAM_REDIRECT_URI;
   
-  if (!appId) {
-    throw new Error('INSTAGRAM_APP_ID no está configurado');
+  // Validar que las variables estén configuradas
+  if (!clientId) {
+    throw new Error('INSTAGRAM_APP_ID no está configurado en las variables de entorno');
   }
   
   if (!redirectUri) {
-    throw new Error('INSTAGRAM_REDIRECT_URI no está configurado');
+    throw new Error('INSTAGRAM_REDIRECT_URI no está configurado en las variables de entorno');
   }
 
-  const scopes = [
-    'user_profile',
-    'user_media',
-  ].join(',');
+  // Construir el URL exactamente como lo requiere Instagram OAuth
+  const authUrl = `https://api.instagram.com/oauth/authorize?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=user_profile,user_media&response_type=code`;
 
-  const params = new URLSearchParams({
-    client_id: appId,
-    redirect_uri: redirectUri,
-    scope: scopes,
-    response_type: 'code',
-  });
+  // Mostrar el URL en consola para verificación
+  console.log('🔗 URL de autorización de Instagram generada:');
+  console.log(authUrl);
+  console.log('📋 Variables utilizadas:');
+  console.log('  - INSTAGRAM_APP_ID:', clientId);
+  console.log('  - INSTAGRAM_REDIRECT_URI:', redirectUri);
 
-  return `https://api.instagram.com/oauth/authorize?${params.toString()}`;
+  return authUrl;
 }
 
 /**
